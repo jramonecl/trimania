@@ -1,0 +1,27 @@
+#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
+
+FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
+WORKDIR /app
+EXPOSE 80
+EXPOSE 443
+
+FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
+WORKDIR /src
+COPY ["Trimania/Trimania.csproj", "Trimania/"]
+COPY ["TriMania.Seed/TriMania.Seed.csproj", "TriMania.Seed/"]
+COPY ["TriMania.Presentation/TriMania.Application.csproj", "TriMania.Presentation/"]
+COPY ["TriMania.Domain/TriMania.Domain.csproj", "TriMania.Domain/"]
+COPY ["Trimania.Shared/Trimania.Shared.csproj", "Trimania.Shared/"]
+COPY ["TriMania.Infra/TriMania.Infra.csproj", "TriMania.Infra/"]
+RUN dotnet restore "Trimania/Trimania.csproj"
+COPY . .
+WORKDIR "/src/Trimania"
+RUN dotnet build "Trimania.csproj" -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish "Trimania.csproj" -c Release -o /app/publish
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "Trimania.dll"]

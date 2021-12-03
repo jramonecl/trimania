@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trimania", "Trimania\Trimania.csproj", "{DF650062-FBFE-4735-A59C-FBF93F134CDC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{9ED4B937-CB1B-45B1-BE4E-5EAE57529104}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{49DC7B5E-CF45-4B1C-B00F-6A6ADEF2D443}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{B62363FE-2C35-4D22-9075-FA83ECE5D1E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{AD762C29-0E4D-446A-9A01-6E3BB590FE92}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TriMania.Domain", "TriMania.Domain\TriMania.Domain.csproj", "{1D98AA5E-8FB7-4CCB-A820-06894484FE2F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TriMania.Infra", "TriMania.Infra\TriMania.Infra.csproj", "{99F00E45-682A-4BB7-A8D3-6F77D420D7C0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TriMania.Application", "TriMania.Presentation\TriMania.Application.csproj", "{2C629D41-3257-4ECB-8A51-11409A5AB1B0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trimania.Shared", "Trimania.Shared\Trimania.Shared.csproj", "{24480500-41A5-46D9-8B5B-82562AC7A699}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{0CA29C3C-81F0-416D-9434-154A286B6A2A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{85F653BB-6B6C-4DF6-A28E-2A2DA7AA54A2}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF650062-FBFE-4735-A59C-FBF93F134CDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF650062-FBFE-4735-A59C-FBF93F134CDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF650062-FBFE-4735-A59C-FBF93F134CDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF650062-FBFE-4735-A59C-FBF93F134CDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D98AA5E-8FB7-4CCB-A820-06894484FE2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D98AA5E-8FB7-4CCB-A820-06894484FE2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D98AA5E-8FB7-4CCB-A820-06894484FE2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D98AA5E-8FB7-4CCB-A820-06894484FE2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99F00E45-682A-4BB7-A8D3-6F77D420D7C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99F00E45-682A-4BB7-A8D3-6F77D420D7C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99F00E45-682A-4BB7-A8D3-6F77D420D7C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99F00E45-682A-4BB7-A8D3-6F77D420D7C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C629D41-3257-4ECB-8A51-11409A5AB1B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C629D41-3257-4ECB-8A51-11409A5AB1B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C629D41-3257-4ECB-8A51-11409A5AB1B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C629D41-3257-4ECB-8A51-11409A5AB1B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24480500-41A5-46D9-8B5B-82562AC7A699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24480500-41A5-46D9-8B5B-82562AC7A699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24480500-41A5-46D9-8B5B-82562AC7A699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24480500-41A5-46D9-8B5B-82562AC7A699}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CA29C3C-81F0-416D-9434-154A286B6A2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CA29C3C-81F0-416D-9434-154A286B6A2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CA29C3C-81F0-416D-9434-154A286B6A2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CA29C3C-81F0-416D-9434-154A286B6A2A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DF650062-FBFE-4735-A59C-FBF93F134CDC} = {9ED4B937-CB1B-45B1-BE4E-5EAE57529104}
+		{1D98AA5E-8FB7-4CCB-A820-06894484FE2F} = {49DC7B5E-CF45-4B1C-B00F-6A6ADEF2D443}
+		{99F00E45-682A-4BB7-A8D3-6F77D420D7C0} = {AD762C29-0E4D-446A-9A01-6E3BB590FE92}
+		{2C629D41-3257-4ECB-8A51-11409A5AB1B0} = {B62363FE-2C35-4D22-9075-FA83ECE5D1E8}
+		{24480500-41A5-46D9-8B5B-82562AC7A699} = {49DC7B5E-CF45-4B1C-B00F-6A6ADEF2D443}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A5C6CCE0-DB6A-4195-AFFA-8445297616B1}
+	EndGlobalSection
+EndGlobal
